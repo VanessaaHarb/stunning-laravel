@@ -8,69 +8,40 @@ The command "sudo chgrp -R www-data storage bootstrap/cache" changes the group o
 
 The command "sudo chmod -R ug+rwx storage bootstrap/cache" sets permissions for the "storage" and "bootstrap/cache" directories and their contents
 
-*: correct command
 
-ssh -i private-key.pem ubuntu@ec2-52-49-203-252.eu-west-1.compute.amazonaws.com *
-sudo apt-get install apache2 *
-sudo apt-get install mysql-server *
-sudo apt-get install php-mysql *
-sudo apt-get install php *
-sudo apt-get install libapache2-mod-php *
-sudo apt-get install php-mcrypt 
-sudo apt-get install php-pear *
-sudo apt-get install curl *
-sudo apt-get install php-curl *
-sudo apt-get install php-cli *
-sudo apt-get install git *
-sudo apt-get install php-mycrypt *
-a2enmod rewrite
-sudo a2enmod rewrite *
-sudo /etc/init.d/apache2 restart *
-cd var/www/html *
-pwd *
-git clone "https://github.com/VanessaaHarb/stunning-laravel.git"
-git clone "git@github.com:VanessaaHarb/stunning-laravel.git"
-git clone "https://github.com/VanessaaHarb/stunning-laravel.git"
-git clone https://github.com/VanessaaHarb/stunning-laravel.git
-sudo git clone https://github.com/VanessaaHarb/stunning-laravel.git *
-curl -sS https://getcomposer.org/installer | sudo php — — instaldir=/usr/local/bin — filename=composer
-curl -sS https://getcomposer.org/installer | sudo php -- --install dir=/usr/local/bin --filename=composer *
-composer install
-sudo apt install composer *
-ls *
-pwd *
-cd stunning-laravel *
-cp .env.example .env
-sudo cp .env.example .env *
-cat .env
-cat .env.example
-sudo vim .env *
-cat .env
-php artisan key:generate
-sudo vim .env
-php artisan key:generate
-sudo php artisan key:generate *
-which apache2 *
-cd /usr/sbin/apache2
-cd /usr
-cd sbin
-ls
+ssh -i private-key.pem ubuntu@ec2-52-49-203-252.eu-west-1.compute.amazonaws.com 
+sudo apt-get install apache2 
+sudo apt-get install mysql-server 
+sudo apt-get install php-mysql 
+sudo apt-get install php 
+sudo apt-get install libapache2-mod-php  
+sudo apt-get install php-pear 
+sudo apt-get install curl 
+sudo apt-get install php-curl 
+sudo apt-get install php-cli 
+sudo apt-get install git 
+sudo apt-get install php-mycrypt 
+sudo a2enmod rewrite 
+sudo /etc/init.d/apache2 restart 
+cd var/www/html 
+pwd 
+sudo git clone https://github.com/VanessaaHarb/stunning-laravel.git 
+curl -sS https://getcomposer.org/installer | sudo php -- --install dir=/usr/local/bin --filename=composer 
+sudo apt install composer 
+ls 
+pwd 
+cd stunning-laravel 
+sudo cp .env.example .env 
+sudo vim .env 
+sudo php artisan key:generate 
+which apache2 
+cd .. 
+cd etc 
 cd apache2
-cd etc
-cd .. *
-ls
-cd etc *
-ls
-cd apache2 *
-ls
-sudo vim apache2.conf *
-cat apache2.conf
-ls
-cd sites-enabled/ *
-ls
-sudo vim 000-default.conf *
-sudo service apache2 restart *
-cd /var/www/html/stunning-laravel/ *
-sudo chgrp -R www-data storage bootstrap/cache *
-“sudo chmod -R ug+rwx storage bootstrap/cache
-sudo chmod -R ug+rwx storage bootstrap/cache *
+sudo vim apache2.conf 
+cd sites-enabled/ 
+sudo vim 000-default.conf 
+sudo service apache2 restart 
+cd /var/www/html/stunning-laravel/ 
+sudo chgrp -R www-data storage bootstrap/cache 
+sudo chmod -R ug+rwx storage bootstrap/cache 
